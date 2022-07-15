@@ -8,7 +8,7 @@ object t3{
         def Farenheit(c:Double) = c*1.8 +32
         println(Farenheit(35))
 
-        def volume(r:Double) = 4/3*math.Pi*r*r*r
+        def volume(r:Double) = 4/3.0*math.Pi*r*r*r
         println(volume(5))
 
 
