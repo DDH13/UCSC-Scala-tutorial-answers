@@ -20,8 +20,8 @@ object t3{
         def wholesalecost(n:Int) = bookprice(n)+shippingcost(n)
         println(wholesalecost(60))
 
-        def easyTime(d:Double) = d/8
-        def tempoTime(d:Double) = d/7
+        def easyTime(d:Double) = d*8
+        def tempoTime(d:Double) = d*7
         def runningtime(easy:Int,tempo:Int) = easyTime(easy) + tempoTime(tempo)
         println(runningtime(4,3))
     }
