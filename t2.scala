@@ -1,5 +1,5 @@
-object t1{
-    import scala.language.postfixOps
+object t2{
+
     def main(args: Array[String]) = {
         var k,i,j = 2
         var m,n = 5
