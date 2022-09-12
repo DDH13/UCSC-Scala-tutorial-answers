@@ -48,7 +48,7 @@ object t7 extends App{
         negbalance(bank).map(x=>x.print())
 
         val total = (accounts:List[Account])=> 
-            accounts.reduce((x,y)=>{y.deposit(x.balance);y})
+                accounts.reduce((x,y)=>{new Account("sum",x.balance+y.balance)})
         println("Sum of all accounts = "+total(bank).balance)
         
         def interest(acc:Account):Double = acc.balance<0 match{
