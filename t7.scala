@@ -6,7 +6,7 @@ object t7 extends App{
             def +(that:Rational)=
                 new Rational(this.n*that.d + that.n*this.d,this.d*that.d)
             def neg() = new Rational(-this.n,this.d)
-            def -(that:Rational)= this+that.neg()
+            def sub(that:Rational)= this+that.neg()
             def Ts()= println(this.n+"/"+this.d)
 
         }
@@ -19,7 +19,7 @@ object t7 extends App{
         val y = new Rational(5,8)
         val z = new Rational(2,7)
 
-        (x-y-z).Ts()
+        x.sub(y).sub(z).Ts()
 
 
         class Account(idno:String,b:Double){
